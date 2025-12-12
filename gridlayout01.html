@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout04</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; 
+            padding: 0;
+            background-color: beige; 
+        }
+
+        
+        .container {
+            width: 90%;
+            max-width: 800px; 
+            margin: 20px auto; 
+            background-color: rgb(53, 165, 205); 
+            padding: 10px;
+        }
+
+
+        .block {
+            background-color: rgb(44, 211, 211); 
+            color: #000405;
+            text-align: center;
+            padding: 20px
+            margin-bottom: 10px; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+        }
+
+        
+        .box-container {
+            display: flex; 
+            justify-content: space-between; 
+            margin-bottom: 10px; 
+            gap: 10px; 
+        }
+        .box {
+            flex-grow: 1; 
+            background-color: turquoise; 
+            color: white;
+            text-align: center;
+            padding: 80px 20px; 
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .text-area {
+             padding: 15px;
+        }
+        
+    </style>
+    </head>
+<body>
+
+    <div class="container">
+        <div class="block">Logo</div>
+
+        <div class="block">Header</div>
+
+        <div class="block text-area">Text Area</div>
+
+        <div class="box-container">
+            <div class="box">Box1</div>
+            <div class="box">Box2</div>
+            <div class="box">Box3</div>
+        </div>
+
+        <div class="block">Footer</div>
+    </div>
+
+</body>
+</html>
